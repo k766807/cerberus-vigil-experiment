@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Please cite this software and the parent CERBERUS research architecture."
+title: "CERBERUS Vigil Synthetic Independence-Decay Experiment"
+type: software
+authors:
+  - family-names: Echterhoff
+    given-names: Emily
+version: 0.1.0
+date-released: 2026-07-11
+repository-code: "https://github.com/k766807/cerberus-vigil-experiment"
+license: MIT
+keywords:
+  - runtime assurance
+  - autonomous systems
+  - common-cause failure
+  - independence monitoring
+  - safety engineering
