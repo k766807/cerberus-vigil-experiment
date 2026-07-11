@@ -1,0 +1,32 @@
+{
+  "experiment": "CERBERUS Vigil synthetic independence-decay experiment",
+  "status": "implemented explanatory prototype; not flight validation",
+  "config": {
+    "n_samples": 1800,
+    "commissioning_end": 500,
+    "coupling_onset": 700,
+    "behavioral_symptom": 1300,
+    "rolling_window": 120,
+    "coupling_max": 1.4,
+    "alpha_one_sided": 0.05,
+    "consecutive_alarm_samples": 10,
+    "calibration_runs": 100,
+    "evaluation_runs": 200,
+    "representative_seed": 20260711
+  },
+  "calibrated_alarm_threshold_upper_bound": 0.45832639152918053,
+  "nominal_false_alarm_runs": 0,
+  "nominal_evaluation_runs": 200,
+  "nominal_run_false_alarm_rate": 0.0,
+  "coupling_detection_runs": 200,
+  "coupling_evaluation_runs": 200,
+  "coupling_detection_rate": 1.0,
+  "median_detection_sample": 1061.5,
+  "median_detection_lead_samples": 238.5,
+  "lead_samples_p10": 160.9,
+  "lead_samples_p90": 319.59999999999997,
+  "representative_detection_sample": 984,
+  "representative_first_A2": 799,
+  "representative_first_A1": 1139,
+  "representative_first_A0": 1197
+}
