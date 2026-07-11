@@ -1,13 +1,15 @@
 # CERBERUS Vigil Experiment
 
-> A reproducible synthetic experiment for detecting runtime independence decay before a predefined behavioral symptom.
+> A reproducible matched-model pipeline-verification experiment for runtime independence monitoring.
 
 [![Reproduce experiment](https://github.com/k766807/cerberus-vigil-experiment/actions/workflows/reproduce.yml/badge.svg)](https://github.com/k766807/cerberus-vigil-experiment/actions/workflows/reproduce.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 This repository isolates one implemented experiment from the broader [CERBERUS Runtime Assurance](https://github.com/k766807/cerberus-runtime-assurance) architecture.
 
-CERBERUS treats assurance-layer independence as a perishable runtime quantity. This experiment tests a much narrower proposition: after removing a measured common environmental signal from two synthetic channels, a rising hidden shared pathway can be detected through residual dependence, and a conservative upper bound can trigger illustrative authority contraction.
+CERBERUS treats assurance-layer independence as a perishable runtime quantity. This experiment tests a much narrower proposition: after removing a measured common environmental signal from two synthetic channels, a deliberately injected hidden shared pathway should increase residual dependence, a conservative upper bound should move in the adverse direction, and illustrative authority should contract monotonically.
+
+> **Perfect separation is expected when the detector's model matches the data generator. This experiment tests pipeline correctness, fixed-seed reproducibility, and conservative-bound behavior under known ground truth - not realistic detection difficulty or operational performance.**
 
 ![Representative fixed-seed result](results/vigil_independence_decay.svg)
 
@@ -22,7 +24,7 @@ CERBERUS treats assurance-layer independence as a perishable runtime quantity. T
 | 10th-90th percentile lead | **160.9-319.6 samples** |
 | Representative detection | **sample 984** |
 
-These results describe only the supplied synthetic model and fixed seed protocol. They are not estimates of spacecraft or production performance.
+The generator creates the same residual-coupling structure that the detector is designed to identify. The result therefore verifies the wiring of conditioning, threshold calibration, persistence logic, conservative-bound computation, fixed-seed reproduction, and illustrative authority transitions. It is not an estimate of spacecraft, production, or model-mismatched detector performance.
 
 ## Run it
 
@@ -37,10 +39,10 @@ python run_experiment.py
 
 Generated outputs are written to `results/`:
 
-- `summary.json` — machine-readable metrics and configuration
-- `monte_carlo_results.csv` — compact metric table
-- `representative_trace.csv` — generated full representative signal and authority trace
-- `vigil_independence_decay.png` — generated review figure
+- `summary.json` - machine-readable metrics and configuration
+- `monte_carlo_results.csv` - compact metric table
+- `representative_trace.csv` - generated full representative signal and authority trace
+- `vigil_independence_decay.png` - generated review figure
 
 The repository commits the small reference SVG and summary tables; CI regenerates the full outputs as an artifact.
 
@@ -71,7 +73,9 @@ docs/method.md         protocol, interpretation, and non-claims
 
 **Implemented here:** synthetic data generation, commissioning residualization, rolling residual-correlation monitor, Fisher upper bound, fixed-seed calibration/evaluation, illustrative authority contraction, tests, and reproducible outputs.
 
-**Not implemented or validated here:** structural or probabilistic FCOI, transfer entropy, sentinel injection, spacecraft FDIR, hardware-in-the-loop behavior, promotion/recovery safety, and flight certification.
+**Established here:** the matched-model evidence-to-authority pipeline is internally consistent, deterministic under fixed seeds, and monotonic in the intended adverse-evidence direction.
+
+**Not implemented or validated here:** structural or probabilistic FCOI, realistic detection difficulty, model mismatch, transfer entropy, sentinel injection, spacecraft FDIR, hardware-in-the-loop behavior, promotion/recovery safety, and flight certification.
 
 ## License
 
