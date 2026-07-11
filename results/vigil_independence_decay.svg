@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="560" viewBox="0 0 1000 560" role="img" aria-labelledby="title desc">
+<title id="title">CERBERUS Vigil fixed-seed result summary</title>
+<desc id="desc">A compact summary of hidden coupling onset, Vigil detection, behavioral symptom time, and illustrative authority contraction.</desc>
+<style>
+  text{font-family:system-ui,sans-serif;fill:#222}.axis{stroke:#333;stroke-width:1.5}.grid{stroke:#ddd;stroke-width:1}.event{stroke:#666;stroke-width:1.5;stroke-dasharray:7 5}.detect{stroke:#8b1a1a;stroke-width:2;stroke-dasharray:8 3 2 3}.symptom{stroke:#444;stroke-width:1.5;stroke-dasharray:2 5}.signal{fill:none;stroke:#8b1a1a;stroke-width:3}.authority{fill:none;stroke:#1f5f99;stroke-width:4}.small{font-size:13px}.label{font-size:16px;font-weight:600}
+</style>
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="500" y="32" text-anchor="middle" font-size="23" font-weight="700">CERBERUS Vigil: Synthetic Independence Decay</text>
+<text x="500" y="54" text-anchor="middle" class="small">Fixed representative seed 20260711 · explanatory prototype · not flight validation</text>
+
+<text x="80" y="90" class="label">Conservative residual-dependence proxy</text>
+<line x1="80" y1="105" x2="80" y2="300" class="axis"/><line x1="80" y1="300" x2="950" y2="300" class="axis"/>
+<line x1="80" y1="215" x2="950" y2="215" class="grid"/>
+<path d="M80 270 C220 268 330 266 418 258 C500 248 545 225 570 198 C620 142 700 110 950 95" class="signal"/>
+<line x1="418" y1="105" x2="418" y2="300" class="event"/>
+<line x1="556" y1="105" x2="556" y2="300" class="detect"/>
+<line x1="708" y1="105" x2="708" y2="300" class="symptom"/>
+<text x="418" y="322" text-anchor="middle" class="small">coupling begins · 700</text>
+<text x="556" y="340" text-anchor="middle" class="small">Vigil detection · 984</text>
+<text x="708" y="322" text-anchor="middle" class="small">chosen symptom · 1300</text>
+<text x="88" y="232" class="small">calibrated threshold = 0.4583</text>
+
+<text x="80" y="380" class="label">Illustrative authority contraction</text>
+<line x1="80" y1="395" x2="80" y2="500" class="axis"/><line x1="80" y1="500" x2="950" y2="500" class="axis"/>
+<path d="M80 405 H466 V435 H632 V466 H661 V495 H950" class="authority"/>
+<text x="62" y="411" text-anchor="end" class="small">A3</text><text x="62" y="441" text-anchor="end" class="small">A2</text><text x="62" y="472" text-anchor="end" class="small">A1</text><text x="62" y="500" text-anchor="end" class="small">A0</text>
+<text x="466" y="525" text-anchor="middle" class="small">A2 · 799</text><text x="632" y="543" text-anchor="middle" class="small">A1 · 1139</text><text x="661" y="525" text-anchor="middle" class="small">A0 · 1197</text>
+</svg>
