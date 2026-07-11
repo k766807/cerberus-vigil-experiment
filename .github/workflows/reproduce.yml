@@ -23,8 +23,8 @@ jobs:
         run: pytest
       - name: Reproduce fixed-seed outputs
         run: python run_experiment.py --out reproduced-results
-      - name: Check committed summary
-        run: diff -u results/summary.json reproduced-results/summary.json
+      - name: Verify committed summary
+        run: python tools/verify_results.py results/summary.json reproduced-results/summary.json
       - name: Upload reproduced outputs
         uses: actions/upload-artifact@v4
         with:
