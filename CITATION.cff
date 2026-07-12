@@ -7,7 +7,7 @@ authors:
     given-names: Emily
 version: 0.1.0
 date-released: 2026-07-11
-repository-code: "https://github.com/k766807/cerberus-vigil-experiment"
+repository-code: "https://github.com/emilyecht/cerberus-vigil-experiment"
 license: MIT
 keywords:
   - runtime assurance
