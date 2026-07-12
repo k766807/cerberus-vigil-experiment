@@ -62,6 +62,16 @@ The repository commits the small reference SVG and summary tables; CI regenerate
 
 The full method, valid claim, and non-claims are in [docs/method.md](docs/method.md).
 
+## Research roadmap
+
+The next planned scientific stage is **CERBERUS Stress Suite v1**. It will intentionally break the match between detector and generator using degraded telemetry, benign confounding, alternative detectors, harmful-coupling variants, and frozen held-out evaluation.
+
+- [CERBERUS Stress Suite v1 Research Plan](docs/CERBERUS_Stress_Suite_v1_Research_Plan.md)
+- [Stress Suite v1 tracking issue](https://github.com/emilyecht/cerberus-vigil-experiment/issues/4)
+- [Architecture-level white paper update](https://github.com/emilyecht/cerberus-runtime-assurance/blob/main/docs/CERBERUS_White_Paper_Update_Stress_Suite_and_FCOI.md)
+
+This roadmap is planning only. No model-mismatch robustness result is claimed yet, and the existing matched-model experiment remains the regression target.
+
 ## Repository layout
 
 ```text
