@@ -2,10 +2,10 @@
 
 > A reproducible matched-model pipeline-verification experiment for runtime independence monitoring.
 
-[![Reproduce experiment](https://github.com/k766807/cerberus-vigil-experiment/actions/workflows/reproduce.yml/badge.svg)](https://github.com/k766807/cerberus-vigil-experiment/actions/workflows/reproduce.yml)
+[![Reproduce experiment](https://github.com/emilyecht/cerberus-vigil-experiment/actions/workflows/reproduce.yml/badge.svg)](https://github.com/emilyecht/cerberus-vigil-experiment/actions/workflows/reproduce.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-This repository isolates one implemented experiment from the broader [CERBERUS Runtime Assurance](https://github.com/k766807/cerberus-runtime-assurance) architecture.
+This repository isolates one implemented experiment from the broader [CERBERUS Runtime Assurance](https://github.com/emilyecht/cerberus-runtime-assurance) architecture.
 
 CERBERUS treats assurance-layer independence as a perishable runtime quantity. This experiment tests a much narrower proposition: after removing a measured common environmental signal from two synthetic channels, a deliberately injected hidden shared pathway should increase residual dependence, a conservative upper bound should move in the adverse direction, and illustrative authority should contract monotonically.
 
@@ -17,6 +17,7 @@ CERBERUS treats assurance-layer independence as a perishable runtime quantity. T
 
 | Metric | Result |
 |---|---:|
+| Calibrated alarm threshold | **0.458326** |
 | Nominal sustained-alarm runs | **0 / 200** |
 | Coupling detections | **200 / 200** |
 | Median detection sample | **1061.5** |
@@ -24,18 +25,21 @@ CERBERUS treats assurance-layer independence as a perishable runtime quantity. T
 | 10th-90th percentile lead | **160.9-319.6 samples** |
 | Representative detection | **sample 984** |
 
+The committed machine-readable value is `0.45832639152918053`. The rounded value shown in both repository READMEs is `0.458326`.
+
 The generator creates the same residual-coupling structure that the detector is designed to identify. The result therefore verifies the wiring of conditioning, threshold calibration, persistence logic, conservative-bound computation, fixed-seed reproduction, and illustrative authority transitions. It is not an estimate of spacecraft, production, or model-mismatched detector performance.
 
-## Run it
+## Run it from a fresh clone
 
 ```bash
-python -m venv .venv
-# Windows: .venv\Scripts\activate
-# macOS/Linux: source .venv/bin/activate
+git clone https://github.com/emilyecht/cerberus-vigil-experiment.git
+cd cerberus-vigil-experiment
 python -m pip install -e ".[dev]"
 pytest
 python run_experiment.py
 ```
+
+The final command prints the full summary as JSON. Confirm that `calibrated_alarm_threshold_upper_bound` equals `0.45832639152918053`, which rounds to `0.458326`.
 
 Generated outputs are written to `results/`:
 
